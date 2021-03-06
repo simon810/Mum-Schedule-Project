@@ -1,2 +1,4 @@
-package edu.mum.mumsched.service.serviceImpl;public interface StudentService {
+package edu.mum.mumsched.service;
+
+public interface StudentService {
 }
