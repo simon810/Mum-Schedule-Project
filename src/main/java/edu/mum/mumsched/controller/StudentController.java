@@ -31,7 +31,7 @@ public class StudentController {
 
     @PostMapping("/student")
     @ResponseStatus(HttpStatus.CREATED)
-    public StudentDto getStudentById(@RequestBody StudentDto studentDto) {
+    public StudentDto insertStudent(@RequestBody StudentDto studentDto) {
         return studentService.insertStudent(studentDto);
     }
 
