@@ -1,9 +1,7 @@
 package edu.mum.mumsched.service.serviceImpl;
 
 import edu.mum.mumsched.domain.RegisterRecord;
-import edu.mum.mumsched.domain.Student;
 import edu.mum.mumsched.dto.RegisterRecordDto;
-import edu.mum.mumsched.dto.StudentDto;
 import edu.mum.mumsched.repository.RegisterRecordRepository;
 import edu.mum.mumsched.service.RegisterRecordService;
 import org.modelmapper.ModelMapper;
@@ -27,7 +25,7 @@ public class RegisterRecordServiceImpl implements RegisterRecordService {
     @Override
     public RegisterRecordDto getRecordById(Long id) {
         RegisterRecord registerRecord = registerRecordRepository.findById(id).orElse(null);
-        if (registerRecord == null) throw new RuntimeException("Student Not Found!");
+        if (registerRecord == null) throw new RuntimeException("Registered Record Not Found!");
 
         return modelMapper.map(registerRecord, RegisterRecordDto.class);
     }
