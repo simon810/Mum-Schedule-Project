@@ -1,8 +1,6 @@
 package edu.mum.mumsched.service;
 
-import edu.mum.mumsched.domain.RegisterRecord;
 import edu.mum.mumsched.dto.RegisterRecordDto;
-import edu.mum.mumsched.dto.StudentDto;
 
 import java.util.List;
 
