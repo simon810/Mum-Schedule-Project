@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import java.time.LocalDate;
 
 @Entity
-public class RegisterRecorde {
+public class RegisterRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

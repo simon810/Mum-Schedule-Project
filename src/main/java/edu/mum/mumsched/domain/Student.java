@@ -12,7 +12,7 @@ public class Student {
     @ManyToOne
     private Entry entry;
     @OneToMany
-    private List<RegisterRecorde> registerRecordes=new ArrayList<>();
+    private List<RegisterRecord> registerRecordes=new ArrayList<>();
 
 
 
