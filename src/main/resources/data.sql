@@ -125,17 +125,7 @@ INSERT INTO block_courses (block_id,course_id) VALUES (1,12);
 -- =============================schedule=======================
 
 INSERT INTO schedule (id) VALUES (1);
-INSERT INTO schedule (id) VALUES (2);
-INSERT INTO schedule (id) VALUES (3);
-INSERT INTO schedule (id) VALUES (4);
-INSERT INTO schedule (id) VALUES (5);
-INSERT INTO schedule (id) VALUES (6);
-INSERT INTO schedule (id) VALUES (7);
-INSERT INTO schedule (id) VALUES (8);
-INSERT INTO schedule (id) VALUES (9);
-INSERT INTO schedule (id) VALUES (10);
-INSERT INTO schedule (id) VALUES (11);
-INSERT INTO schedule (id) VALUES (12);
+
 
 -- *******************************schedule_blocks**************
 
