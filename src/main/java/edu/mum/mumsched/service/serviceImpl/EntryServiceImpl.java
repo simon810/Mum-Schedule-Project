@@ -5,10 +5,14 @@ import edu.mum.mumsched.dto.EntryDto;
 import edu.mum.mumsched.repository.EntryRepository;
 import edu.mum.mumsched.service.EntryService;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
+@Transactional
 public class EntryServiceImpl implements EntryService {
 
     private EntryRepository entryRepository;

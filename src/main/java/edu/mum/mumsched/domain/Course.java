@@ -1,10 +1,13 @@
 package edu.mum.mumsched.domain;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Data
 public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

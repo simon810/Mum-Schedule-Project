@@ -24,8 +24,14 @@ public class Block {
     @Enumerated(EnumType.STRING)
     private BlockName blockName;
     @OneToMany
+    @JoinTable(
+            joinColumns = {@JoinColumn(name = "block_id")},
+            inverseJoinColumns = {@JoinColumn(name = "course_id")})
     private List<Course> courses=new ArrayList<>();
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            joinColumns = {@JoinColumn(name = "block_id")},
+            inverseJoinColumns = {@JoinColumn(name = "faculty_id", unique = false)})
     private List<Faculty> faculties=new ArrayList<>();
 
 
