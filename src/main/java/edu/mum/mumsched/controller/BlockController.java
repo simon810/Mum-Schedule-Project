@@ -30,4 +30,10 @@ public class BlockController {
     public BlockDto insertBlock(@RequestBody BlockDto blockDto) {
         return blockService.insertBlock(blockDto);
     }
+
+    @PatchMapping("/block")
+    @ResponseStatus(HttpStatus.OK)
+    public BlockDto updateEntry(@RequestBody BlockDto blockDto) {
+        return blockService.updateBlock(blockDto);
+    }
 }

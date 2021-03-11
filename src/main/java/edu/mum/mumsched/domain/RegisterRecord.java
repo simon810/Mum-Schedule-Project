@@ -14,10 +14,10 @@ public class RegisterRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String period;
+    private String block;
     private String courseCode;
     private String title;
     private String faculty;
-    private LocalDate start;
+    private LocalDate startDate;
 
 }

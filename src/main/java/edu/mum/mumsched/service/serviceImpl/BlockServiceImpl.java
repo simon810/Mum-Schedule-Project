@@ -39,4 +39,12 @@ public class BlockServiceImpl implements BlockService {
                 .collect(Collectors.toList());
 
     }
+
+    @Override
+    public BlockDto updateBlock(BlockDto blockDto) {
+        Block blockToSave=modelMapper.map(blockDto,Block.class);
+        Block blockSaved=blockRepository.save(blockToSave);
+
+        return modelMapper.map(blockSaved, BlockDto.class);
+    }
 }

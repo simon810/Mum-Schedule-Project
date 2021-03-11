@@ -12,5 +12,4 @@ public class BlockDto {
     private LocalDate endDate;
     private String blockName;
     private List<CourseDto> courses;
-    private List<FacultyDto> faculties;
 }

@@ -15,8 +15,8 @@ public class Faculty {
     private String fullName;
 //    @ManyToOne
 //    private Block blocks;
-    @OneToMany
-    private List<Course> courses=new ArrayList<>();
+//    @OneToMany
+//    private List<Course> courses=new ArrayList<>();
 
 
 }

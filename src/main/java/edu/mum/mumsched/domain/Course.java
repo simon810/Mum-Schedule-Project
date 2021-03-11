@@ -14,8 +14,10 @@ public class Course {
     private Long id;
     private String courseCode;
     private String title;
-    @OneToMany
-    private List<Section> sections=new ArrayList<>();
+    @OneToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    private Faculty faculty;
+    @ElementCollection
+    private List<String> sections=new ArrayList<>();
 
 
     //    private Integer maxNumber;

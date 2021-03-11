@@ -15,6 +15,9 @@ public class Student {
     @OneToOne
     private Entry entry;
     @OneToMany
+    @JoinTable(name = "student_records",
+            joinColumns = {@JoinColumn(name = "student_id")},
+            inverseJoinColumns = {@JoinColumn(name = "record_id")})
     private List<RegisterRecord> registerRecordes=new ArrayList<>();
 
 
