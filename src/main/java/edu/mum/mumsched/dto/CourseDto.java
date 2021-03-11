@@ -10,5 +10,7 @@ public class CourseDto {
     private Long id;
     private String courseCode;
     private String title;
-    private List<SectionDto> sections;
+    private List<String> sections;
+    private FacultyDto faculty;
+
 }

@@ -8,5 +8,5 @@ import java.util.List;
 public class FacultyDto {
     private Long id;
     private String fullName;
-    private List<CourseDto> courses;
+
 }
